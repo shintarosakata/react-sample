@@ -2,7 +2,7 @@ import React from 'react';
 
 const { useState } = React;
 
-const InputForm = (props) => {
+const TodoInputForm = (props) => {
     // formに入力中のTodo
     const [tmpTodo, setTmpTodo] = useState("");
 
@@ -39,4 +39,4 @@ const InputForm = (props) => {
     );
 }
 
-export default InputForm;
+export default TodoInputForm;

@@ -9,7 +9,7 @@ const renderTodo = (todo, index, deleteTodo) => {
     );
 }
 
-const CardList = props => {
+const TodoCardList = props => {
     return (
         <ul className="m-cardList">
             {props.todos.map((t, i) => renderTodo(t, i, props.deleteTodo))}
@@ -17,4 +17,4 @@ const CardList = props => {
     );
 }
 
-export default CardList;
+export default TodoCardList;

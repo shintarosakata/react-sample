@@ -1,11 +1,11 @@
 import React from 'react';
 import '../style/index.scss';
-import Container from './layouts/container/container'
+import TodoContainer from './layouts/container/todoContainer'
 
 const Index = () => {
     return (
         <>
-            <Container />
+            <TodoContainer />
         </>
     );
 }

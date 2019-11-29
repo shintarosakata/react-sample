@@ -1,7 +1,7 @@
 import React from 'react';
 
-import CardList from '../../molecules/cardList/cardList'
-import InputForm from '../../molecules/inputForm/inputForm'
+import TodoCardList from '../../molecules/cardList/todoCardList'
+import TodoInputForm from '../../molecules/inputForm/todoInputForm'
 
 const { useState } = React;
 
@@ -20,10 +20,10 @@ const Todo = () => {
     return (
         <div className="o-todo">
             {/* InputFormにはTodo追加機能を付与 */}
-            <InputForm addTodo={addTodo} />
+            <TodoInputForm addTodo={addTodo} />
 
             {/* CardListにはTodosの情報と削除機能を付与 */}
-            <CardList todos={todos} deleteTodo={deleteTodo} />
+            <TodoCardList todos={todos} deleteTodo={deleteTodo} />
         </div>
     );
 }

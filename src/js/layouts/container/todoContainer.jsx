@@ -1,14 +1,14 @@
 import React from 'react';
 import Todo from '../../objects/organisms/todo/todo'
-import Header from '../../objects/organisms/header/header'
+import TodoHeader from '../../objects/organisms/header/todoHeader'
 
-const Container = () => {
+const TodoContainer = () => {
     return (
         <div className="l-container">
-            <Header />
+            <TodoHeader />
             <Todo />
         </div>
     );
 }
 
-export default Container;
+export default TodoContainer;
