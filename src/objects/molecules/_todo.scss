@@ -1,0 +1,24 @@
+.m-todo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  
+    &__form {
+      margin-bottom: 24px;
+  
+      .a-inputText {
+        margin-right: 8px;
+      }
+    }
+  
+    &__list > li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+  
+      &:last-of-type {
+        margin-bottom: 0;
+      }
+    }
+  }

@@ -25,23 +25,29 @@ const App = () => {
 
   const liTodo = (todo, index) => {
     return (
-      <li key={index}>
+      <li className="a-card" key={index}>
         {todo}
-        <button onClick={() => deleteTodo(index)}>delete</button>
+        <button className="a-button--secondary" onClick={() => deleteTodo(index)}>delete</button>
       </li>
     );
   }
 
   return (
     <>
-      <h1>Todo App</h1>
-      <div className="form">
-        <input type="text" name="todo" onChange={e => setTmpTodo(e.target.value)} value={tmpTodo} />
-        <button onClick={addTodo}>Add</button>
+      <div className="l-container">
+        <div className="o-header">
+          <h1 className="a-headline">Todo App</h1>
+        </div>
+        <div className="m-todo">
+          <div className="m-todo__form">
+            <input type="text" name="todo" className="a-inputText" onChange={e => setTmpTodo(e.target.value)} value={tmpTodo} />
+            <button className="a-button--primary" onClick={addTodo}>Add</button>
+          </div>
+          <ul className="m-todo__list">
+            {todos.map(liTodo)}
+          </ul>
+        </div>
       </div>
-      <ul>
-        {todos.map(liTodo)}
-      </ul>
     </>
   );
 }
