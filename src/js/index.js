@@ -4,7 +4,9 @@ import Container from './layouts/container'
 
 const Index = () => {
     return (
-        <Container />
+        <>
+            <Container />
+        </>
     );
 }
 

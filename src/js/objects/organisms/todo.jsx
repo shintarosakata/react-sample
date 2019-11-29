@@ -21,7 +21,7 @@ const Todo = () => {
         <div className="o-todo">
             {/* InputFormにはTodo追加機能を付与 */}
             <InputForm addTodo={addTodo} />
-            
+
             {/* CardListにはTodosの情報と削除機能を付与 */}
             <CardList todos={todos} deleteTodo={deleteTodo} />
         </div>
