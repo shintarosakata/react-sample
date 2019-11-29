@@ -36,12 +36,16 @@ const App = () => {
                 <div className="o-header">
                     <h1 className="a-headline">Todo App</h1>
                 </div>
-                <div className="m-todo">
-                    <div className="m-todo__form">
-                        <input type="text" name="todo" className="a-inputText" onChange={e => setTmpTodo(e.target.value)} value={tmpTodo} />
-                        <button className="a-button--primary" onClick={addTodo}>Add</button>
+                <div className="o-todo">
+                    <div className="m-inputForm">
+                        <div className="m-inputForm__form">
+                            <input type="text" name="todo" className="a-inputText" onChange={e => setTmpTodo(e.target.value)} value={tmpTodo} />
+                        </div>
+                        <div className="m-inputForm__button">
+                            <button className="a-button--primary" onClick={addTodo}>Add</button>
+                        </div>
                     </div>
-                    <ul className="m-todo__list">
+                    <ul className="m-cardList">
                         {todos.map(liTodo)}
                     </ul>
                 </div>
