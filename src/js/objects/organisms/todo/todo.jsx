@@ -1,7 +1,7 @@
 import React from 'react';
 
-import CardList from '../molecules/cardList'
-import InputForm from '../molecules/imputForm'
+import CardList from '../../molecules/cardList/cardList'
+import InputForm from '../../molecules/inputForm/inputForm'
 
 const { useState } = React;
 

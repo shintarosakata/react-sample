@@ -1,6 +1,6 @@
 import React from 'react';
-import Todo from '../objects/organisms/todo'
-import Header from '../objects/organisms/header'
+import Todo from '../../objects/organisms/todo/todo'
+import Header from '../../objects/organisms/header/header'
 
 const Container = () => {
     return (
